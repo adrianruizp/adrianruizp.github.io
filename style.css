@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Tangerine', cursive;
     color: rgb(0, 0, 0);
-}
+} 
 
 ::-webkit-scrollbar {   /*Elimina la barra vertical de dezplazamiento*/
     display: none;
