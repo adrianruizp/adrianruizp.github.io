@@ -109,7 +109,7 @@ body {  /*Agrega un color de fondo*/
     margin: auto;
     padding: 100px 15px;
     display: flex;
-    background-image: url("/dark.jpg");
+    background-image: url("../dark.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -184,7 +184,7 @@ body {  /*Agrega un color de fondo*/
 }
 
 .contenedor-skills {
-    background-image: linear-gradient(#abac86cc, #181816cc), url("/hoja.jpg");
+    background-image: linear-gradient(#abac86cc, #181816cc), url("../hoja.jpg");
     border-radius: .5ex;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -314,7 +314,7 @@ body {  /*Agrega un color de fondo*/
     margin: auto;
     padding: 100px 15px;
     display: flex;
-    background-image: url("/wood.jpg");
+    background-image: url("../wood.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -325,7 +325,7 @@ body {  /*Agrega un color de fondo*/
     margin: auto;
     padding: 100px 15px;
     display: flex;
-    background-image: url("/wod.jpg");
+    background-image: url("../wod.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -385,7 +385,7 @@ body {  /*Agrega un color de fondo*/
     width: 680px;
     height: 530px;
     border-radius: .6ex;
-    background-image: linear-gradient(#abac86cc, #181816cc), url("/hoja.jpg");
+    background-image: linear-gradient(#abac86cc, #181816cc), url("../hoja.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -447,7 +447,7 @@ body {  /*Agrega un color de fondo*/
     width: 510px;
     color: #000;
     border-radius: .5ex;
-    background-image: linear-gradient(#abac86cc, #181816cc), url("/hoja.jpg");
+    background-image: linear-gradient(#abac86cc, #181816cc), url("../hoja.jpg");
     background-size: cover;
     background-position: center center;
 }
