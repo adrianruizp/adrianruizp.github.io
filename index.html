@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/chems.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scrpt.js"></script>
+    <title>Portafolio</title>
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header"><!--Barra de Menú de la Página Web-->
+                    <h1></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                            <li><a href="#habilidades" onclick="seleccionar(this)">Habilidades</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">Portafolio</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <h1></h1>
+
+                    <div id="icono-nav" onclick="responsiveMenu()"><!--Permite dar click sobre las palabras-->
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </header>
+                    <div class="presentacion"><!--Muestra la primera ventana de la página-->
+                        <center>
+                        <h1>Hola, me llamo
+                            <br>Adrián Alejandro Ruiz Perea
+                        </center>
+                        <h1 class="descripcion">Mis redes sociales:</h1>
+                        <div class="casa-sci"><!--Agrega iconos de redes sociales-->
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-youtube'></i></a>
+                            
+                        </div>
+                    </div>
+
+                    <section id="sobremi"><!--Sección de la ventana de Sobre mi de la página-->
+                        <div class="contenedor-foto">
+                            <img src="img/yo.jpeg" alt="">
+                        </div>
+                        <div class="sobre_mi">
+                            <br>
+                            <p class="titulo-seccion">Sobre Mi</p>
+                            <h2>Hola, soy <span>Adrián Alejandro Ruiz Perea</span> </h2>
+                            <h2>Soy estudiante de la Facultad de Informática en la
+                                <abbr title="Universidad Autónoma de Querétaro"><h1>UAQ.</h1></abbr>
+                            </h2>
+                            <p>Actualmente estoy cursando el octavo semestre de la carrera <br>
+                                de Ingeniería de Software SOFT18. En la actualidad tengo <br>
+                                22 años, me gusta jugar videojuegos, ciclismo, escuchar música,<br>
+                                entre otras cosas y realizar casualmente cortometrajes de stop motion.
+                            
+                            </p>
+                        </div>
+                    </section>
+
+                    <section id="habilidades"><!--Sección de la ventana de Habilidades de la página-->
+                        <div class="contenedor-skills" id="skills">
+                            <h1>HABILIDADES </h1>
+                            <div class="skill">
+                                <div class="info">
+                                    <span class="lista"> </span>
+                                    <abbr title="Para poder 'ajustarme' a ciertas labores,
+debo conocer ciertos conceptos basicos para poder
+familiarizarme y así adquirir la costumbre para realizar las labores
+como lo sería por ejemplo, aprender lenguajes de programación
+java, python, c++, c, javascript etc.">
+                                        <h2>Adaptabilidad para resolver problemas</h2></abbr>
+                                    <span class="porcentaje"><h2>75%</h2></span>
+                                </div>
+                    
+                                <div class="barra"><!--Crea una barra junto con javascript-->
+                                    <div class="" id="adap"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="info">
+                                     <span class="lista"></span>
+                                     <abbr title="Puedo comunicarme con los demás,
+pero aún así, sigo teniendo alguno que otro problema
+debido a que soy introvertido.">
+                                        <h2>Habilidad comunicativa para relacionarme</h2></abbr>
+                                    <span class="porcentaje"><h2>60%</h2></span>
+                                </div>
+                    
+                                <div class="barra">
+                                    <div class="" id="com"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="info">
+                                    <span class="lista"></span>
+                                    <abbr title="Realizo en gran medida alguna labor 
+de manera ingeniosa en la mayoría de los casos 
+usando las tecnologías que esten a mi disposición.">
+                                        <h2>Creatividad en la realización de proyectos</h2></abbr>
+                                    <span class="porcentaje"><h2>80%</h2></span>
+                                </div>
+                    
+                                <div class="barra">
+                                    <div class="" id="cre"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="info">
+                                    <span class="lista"></span>
+                                        <abbr title="Los trabajos bajo una 
+situación bajo presión en su mayoría los logro realizar
+esto porque me obliga tener mayor concentración 
+y en ocasiones improvise.">
+                                        <h2>Control de estrés</h2></abbr>
+                                    <span class="porcentaje"><h2>70%</h2></span>
+                                </div>
+                    
+                                <div class="barra">
+                                    <div class="" id="est"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="info">
+                                    <span class="lista"></span>
+                                        <abbr title="En los problemas que resuelvo mayoritariamente,
+debo buscar la mejor alternativa para solucionar algun 
+problema que requiera ser corregido.">
+                                    <h2>Resolución de problemas</h2></abbr>
+                                    <span class="porcentaje"><h2>75%</h2></span>
+                                </div>
+                    
+                                <div class="barra">
+                                    <div class="" id="pro"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="portafolio"><!--Sección de la ventana de Portafolio de la página-->
+                            <div id="boxx">
+                                <div id="bx">
+                                    <div id="textBox"></div><!--Muestra el cuadro con texto usando javascript-->
+                                </div>
+                                <div id="bx1">
+                                    <div id="textBox1"></div>
+                                </div>
+                                <div id="bx2">
+                                    <div id="textBox2"></div>
+                                </div>
+                                <div id="bx3">
+                                    <div id="textBox3"></div>
+                                </div>
+                                <div id="bx4">
+                                    <div id="textBox4"></div>
+                                </div>
+                                <div id="bx5">
+                                    <div id="textBox5"></div>
+                                </div>
+                            </div>
+                    </section>
+
+                    <section id="contacto"><!--Sección de la ventana de Contacto de la página-->
+                        <div id="container">
+                            <div id="caja">
+                                <h1><p>Contactame</p></h1>
+                            </div>
+                            <form id="miformulario">
+                                <h1><label>Nombre:</label><br/></h1>
+                                <input type="text" id="itNombre" class="campo" /></form><br/><!--Permite poder ecribir en un cuadro de tecto-->
+                                <div id="msg1" class="errores">Introduce tu nombre por favor</div><!--Aparece si no llenaste un cuadro de texto-->
+                                <h1><label>Correo electronico:</label><br/></h1>
+                                <input type="text" id="itMail" class="campo" /><br/>
+                                <div id="msg2" class="errores">Introduce tu correo electronico</div>
+                                <h1><label>Teléfono:</label><br/></h1>
+                                <input type="text" id="itPhone" class="campo" /><br/>
+                                <div id="msg3" class="errores">Introduce tu No. telefónico</div>
+                                <h1><label>Asunto:</label><br/></h1>
+                                <input type="text" id="itAsunto" class="campo"/><br/>
+                                <div id="msg4" class="errores">Introduce el Asunto de tu correo</div>
+                                <input type="submit" id="bEnviar" value="Enviar datos" class="boton"/><!--Botón para "envíar" los datos ingresados en
+                                los cuadros de textos-->
+                            </form>
+                        </div>
+                    </section>
+    </header>
+    </section>
+</body>
+</html>

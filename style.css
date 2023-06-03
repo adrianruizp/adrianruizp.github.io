@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+* { /*Agrega un color al texto y una fuente universal para toda la página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tangerine', cursive;
+    color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {   /*Elimina la barra vertical de dezplazamiento*/
+    display: none;
+    overflow: auto;
+}
+
+h1 {    /*Todo escrito con este encabezado son de un solo color*/
+    color: #ffffff;
+}
+
+h2 {    /*Todo escrito con este encabezado son de un solo color*/
+    color: #ffffff;
+}
+
+html {  /*Hace que al elegir una ventana se vizualice de manera más dinámica*/
+    scroll-behavior: smooth;
+}
+
+body {  /*Agrega un color de fondo*/
+    background-color: rgb(73, 70, 70);
+}
+
+#inicio {   /*Agrega una imagen de fondo*/
+    background-image: url("../img/rock.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header { /*Agrega un color en la barra de navegación*/
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    font-size: 40px;
+    text-shadow: -1px 1px 30px 
+            rgb(75, 68, 18), 
+            1px -1px 0 
+            rgb(207, 189, 31)
+}
+
+#inicio .contenido header .contenido-header {   /*Agrega un tamaño adecuado para la barra de navegación*/
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {    /*Agrega un relieve de color al texto de la barra de tareas*/
+    text-align: center;
+    color: rgb(207, 189, 31);
+}
+
+#inicio .contenido header .contenido-header nav ul {    /*Hace que el texto este de forma horizontal y centrado*/
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/*Hace que el texto cambie de color al pasar el cursor encima de el*/
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #cebc1e;
+}
+
+#inicio .contenido .presentacion { /*Acomoda el texto e iconos que estan en la ventana*/
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    font-size: 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: -1px 1px 30px 
+            rgb(94, 87, 31), 
+            1px -1px 0 
+            rgb(207, 189, 31)
+}
+
+#icono-nav { /*Centra el texto en la barra*/
+    color: #fff;
+    display: none;
+}
+
+/*Se encarga de toda la ventana de Sobre mi*/
+#sobremi {
+    max-width: 100%;
+    margin: auto;
+    padding: 100px 15px;
+    display: flex;
+    background-image: url("../img/dark.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 300px;
+    margin-right: 70px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 5px;
+    width: 90%;
+    margin-left: 70px;
+    border-radius: 161px;
+    background-color: #2b2a1a;
+    border: 4px ridge #b6b325;
+}
+
+#sobremi .sobre_mi .titulo-seccion {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#sobremi .sobre_mi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    text-shadow: -1px 1px 30px 
+            rgb(75, 68, 18), 
+            1px -1px 0 
+            rgb(207, 189, 31)
+}
+
+#sobremi .sobre_mi h2 span {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px -1px 0
+            rgb(75, 68, 18), 
+            1px -1px 0 
+            rgb(207, 189, 31)
+}
+
+#sobremi .sobre_mi p {
+    font-size: 34px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-bottom: 12px;
+    text-shadow: -1px 1px 30px 
+            rgb(75, 68, 18), 
+            1px -1px 0 
+            rgb(207, 189, 31)
+}
+
+#sobremi .contenedor-foto {
+    margin-left: -2pc;
+}
+
+/*Se encarga de toda la ventana de Habilidades*/
+#habilidades {
+    max-width: 100%;
+    margin: auto;
+    padding: 100px 15px;
+    display: flex;
+    background-image: url("../img/met.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.contenedor-skills {
+    background-image: linear-gradient(#abac86cc, #181816cc), url("../img/hoja.jpg");
+    border-radius: .5ex;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    background-position: center center;
+    padding: 40px;
+    width: 850px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+    font-size: 25px;
+    text-shadow: -1px 1px 30px 
+            rgb(75, 68, 18), 
+            1px -1px 0 
+            rgb(207, 189, 31)
+}
+
+.contenedor-skills .skill {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contenedor-skills .skill .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Crea las barras*/
+.barra{
+    color: black;
+    padding: 8px 0 0 0;
+}
+
+.contenedor-skills .skill .barra {
+    background-color: #ccca40;
+    border: 2px ridge #a8a634;
+    width: 100%;
+    height: 0px;
+    margin: 4px 0px;
+}
+
+.contenedor-skills .skill .barra .barra-progreso1 {
+    background-color: #ffffff;
+    width: 95%;
+    height: 4px;
+    animation: progreso1 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso2 {
+    background-color: #fff;
+    width: 90%;
+    height: 4px;
+    animation: progreso2 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso3 {
+    background-color: #fff;
+    width: 90%;
+    height: 4px;
+    animation: progreso3 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso4 {
+    background-color: #fff;
+    width: 85%;
+    height: 4px;
+    animation: progreso4 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso5 {
+    background-color: #fff;
+    width: 85%;
+    height: 4px;
+    animation: progreso5 2s forwards;
+}
+
+/*Crea una animación para las barras*/
+@keyframes progreso1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes progreso2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes progreso3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes progreso4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes progreso5 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+/*Se encarga de toda la ventana de Habilidades*/
+#portafolio {
+    max-width: 100%;
+    margin: auto;
+    padding: 100px 15px;
+    display: flex;
+    background-image: url("../img/wood.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#contacto {
+    max-width: 100%;
+    margin: auto;
+    padding: 100px 15px;
+    display: flex;
+    background-image: url("../img/wod.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#caja {
+    background-color: (214, 203, 203, 0.3);
+    width: 450px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: .5px;   
+    float:left;
+    border-radius: .5ex;
+    font-size: 30px;
+    color: rgb(207, 189, 31);
+    text-shadow: -2px 4px 10px 
+            rgb(207, 189, 31), 
+            2px -2px 1 
+            rgb(207, 189, 31)
+}
+.campo{
+    border: solid 1px rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    float: left;
+    width: 450px;
+    border-radius: .5ex;
+    margin-top: 5px;
+    color: rgb(0, 0, 0)
+}
+.campo1{
+    border: solid 5px rgb(2, 2, 2);
+    font-size: 34px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 450px;
+    border-radius: 1ex;
+    margin-top: 4px;
+    text-shadow: -2px 4px 10px 
+            rgb(94, 87, 31), 
+            2px -2px 1 
+            rgb(207, 189, 31)
+}
+
+/*Se encarga de toda la ventana de Portafolio*/
+#boxx {
+    -webkit-border-radious: 0px;
+    -webkit-box-shadow: 0 0 20px;
+    -moz-border-radious: 0 0 20px;
+    -o-border-radious: 10px;
+    -o-box-shadow: 0 0 20px;
+    background: rgb(77, 75, 73);
+    box-shadow: 0 0 1px;
+    font-size: 28px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 680px;
+    height: 530px;
+    border-radius: .6ex;
+    background-image: linear-gradient(#abac86cc, #181816cc), url("../img/hoja.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#bx {
+    width: 280px;
+    height: 130px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+#bx1 {
+    width: 280px;
+    height: 130px;
+    float: right;
+    margin-bottom: 30px;
+}
+
+#bx2 {
+    width: 280px;
+    height: 130px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+#bx3 {
+    width: 280px;
+    height: 130px;
+    float: right;
+    margin-bottom: 30px;
+}
+
+#bx4 {
+    width: 280px;
+    height: 130px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+#bx5 {
+    width: 280px;
+    height: 130px;
+    float: right;
+    margin-bottom: 30px;
+}
+
+/*Se encarga de toda la ventana de Contacto*/
+#container{
+    -webkit-border-radious: 0px;
+    -webkit-box-shadow: 0 0 20px;
+    -moz-border-radious: 0 0 20px;
+    -o-border-radious: 10px;
+    -o-box-shadow: 0 0 20px;
+    background: rgb(77, 75, 73);
+    box-shadow: 0 0 1px;
+    font-size: 28px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 510px;
+    color: #000;
+    border-radius: .5ex;
+    background-image: linear-gradient(#abac86cc, #181816cc), url("../img/hoja.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.errores {
+    display: none;
+    -webkit-box-shadow: 0 0 10 rgba(41, 32, 32, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(236, 211, 211, 0.3);
+    -o-box-shadow: 0 0 10px;
+    background: rgb(78, 73, 73);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: rgb(102, 78, 78);
+    display: none;
+    font-size: 34px;
+    margin-top: -80px;
+    margin-left: 340px;
+    padding: 14px;
+    position:absolute;
+    border-radius: .1ex;
+    color: rgb(207, 189, 31);
+}
+
+#textBox{
+    width: 280px;
+    height: 130px;
+    border: 3px ridge #b6b325;
+    background-color: seashell;
+    text-align: center;
+    margin: 5px;
+    padding: 30px;
+    background-position: left;
+    float: left;
+}
+
+#textBox1{
+    width: 280px;
+    height: 130px;
+    border: 3px ridge #b6b325;
+    background-color: seashell;
+    text-align: center;
+    padding: 30px;
+    margin: 5px;
+    background-position: right;
+    float: right;
+}
+
+#textBox2{
+    width: 280px;
+    height: 130px;
+    border: 3px ridge #b6b325;
+    background-color: seashell;
+    text-align: center;
+    margin: 5px;
+    padding: 30px;
+    background-position: left;
+    float: left;
+}
+
+#textBox3{
+    width: 280px;
+    height: 130px;
+    border: 3px ridge #b6b325;
+    background-color: seashell;
+    text-align: center;
+    margin: 5px;
+    padding: 30px;
+    background-position: left;
+    float: right;
+}
+
+#textBox4{
+    width: 280px;
+    height: 130px;
+    border: 3px ridge #b6b325;
+    background-color: seashell;
+    text-align: center;
+    margin: 5px;
+    padding: 30px;
+    background-position: left;
+    float: left;
+}
+
+#textBox5{
+    width: 280px;
+    height: 130px;
+    border: 3px ridge #b6b325;
+    background-color: seashell;
+    text-align: center;
+    margin: 5px;
+    padding: 30px;
+    background-position: left;
+    float: right;
+}
+
+.boton {    /*Crea el botón del formulario*/
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 1ex;
+    box-shadow: 15px 32px 75px 35px
+     rgba(92, 84, 84, 0.2);
+    cursor:progress;
+    transition:all .3s;
+    border:1px solid #78788c;
+}
+
+.boton:hover{
+    background:rgb(177, 162, 55);
+    color:#242114;
+}
+
+/*Se encarga de ajustar los iconos de redes sociales*/
+.casa-sci a{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    background: transparent;
+    border: 5px double rgb(179, 161, 81);
+    border-radius: 10%;
+    font-size: 80px;
+    color: aliceblue;
+}
+
+.casa-sci *{    
+    color: white;
+}
+
+.casa-sca a::after {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 3px double rgb(255, 255, 255);
+    border-radius: 10%;
+    font-size: 10px;
+    color: aliceblue;
+}
